@@ -22,7 +22,7 @@ body {
 }
 
 /* dashboard */
-.icons, .nav-icons {
+.icons {
   width: 32px;
 }
 .dashboard-logo{
@@ -70,8 +70,11 @@ body {
 /* Nav */
 .nav{
   display:grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 70px);
 
+}
+.nav-icons{
+  width: 24px;
 }
 .profile-picture{
   width: 54px;
@@ -82,4 +85,32 @@ body {
   width: 82px;
   height: 82px;
   border-radius: 50%;
+}
+
+.nav-search{
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+}
+.search{
+  display: grid;
+  grid-template-columns: 0.5fr 4fr 0.5fr;
+  align-items: center;
+}
+.searchbar p{
+ background-color: white; 
+ padding: 5px 20px;
+ border-radius: 25px;
+}
+.nav-icons{
+  justify-self: center;
+}
+
+.search-user{
+  display: grid;
+  grid-template-columns: repeat(2,100px);
+  align-items: center;
+  justify-content: center;
+}
+.profile-picture{
+  justify-self: center;
 }
