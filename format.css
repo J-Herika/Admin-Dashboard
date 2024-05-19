@@ -44,3 +44,37 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* fonts */
+@font-face {
+  font-family: montserrat-r;
+  src: url('assets/fonts/Montserrat-Regular.woff2') format('woff2');
+  src: url('assets/fonts/Montserrat-Regular.woff') format('woff');  
+
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: montserrat-m;
+  src: url('assets/fonts/Montserrat-Medium.woff2') format('woff2');
+  src: url('assets/fonts/Montserrat-Medium.woff') format('woff');  
+
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: montserrat-b;
+  src: url('assets/fonts/Montserrat-Bold.woff2') format('woff2');
+  src: url('assets/fonts/Montserrat-Bold.woff') format('woff');  
+
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: montserrat-eb;
+  src: url('assets/fonts/Montserrat-ExtraBold.woff2') format('woff2');
+  src: url('assets/fonts/Montserrat-ExtraBold.woff') format('woff');  
+
+  font-weight: normal;
+  font-style: normal;
+}
