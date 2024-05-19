@@ -22,7 +22,7 @@ body {
 }
 
 /* dashboard */
-.icons  {
+.icons, .nav-icons {
   width: 32px;
 }
 .dashboard-logo{
@@ -65,4 +65,21 @@ body {
 }
 .icons{
   justify-self: end;
+}
+
+/* Nav */
+.nav{
+  display:grid;
+  grid-template-rows: repeat(2, 1fr);
+
+}
+.profile-picture{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+.nav-profile-picture{
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
 }
