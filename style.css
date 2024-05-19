@@ -1,0 +1,16 @@
+.dashboard{
+  background-color:black;
+}
+.nav{
+  background-color:darkgoldenrod;
+}
+.content-area{
+  background-color:blueviolet
+}
+
+.content-frame{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+/* dashboard */
