@@ -18,7 +18,7 @@ body {
   color: var(--secondary)
 }
 .content-area {
-  background-color: var(--secondary);
+  background-color: red;
 }
 
 .content-frame {
@@ -130,7 +130,7 @@ body {
 /* bottom part nav */
 .nav-userinfo {
   display: grid;
-  grid-template-columns: 0.8fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
 }
 .nav-big-profile-picture {
   display: grid;
@@ -150,20 +150,30 @@ body {
 }
 .nav-buttons {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 170px);
   align-items: center;
   gap: 20px;
 }
-.nav-buttons button{
+.nav-button{
   border-radius: 10px;
-  padding: 10px 0;
-  max-width: 150px;
+  padding: 0px 0;
+  width: 150px;
+  height: 100px;
   align-self: end;
+  justify-self: center;
   margin-bottom: 10px;
+
   font-family: montserrat-b;
   font-size: 0.7rem;
+  color: var(--main);
+  background-color:var(--secondary);
 }
 
+button:hover{
+  width: 160px;
+  
+  background-color: var(--greenish);
+}
 
 
 /* main-content section */
@@ -171,3 +181,11 @@ body {
   grid-column: 2;
   grid-row: 2/3;
 }
+.main-content{
+  background-color: aqua;
+}
+.side-content{
+  background-color:burlywood;
+}
+
+
