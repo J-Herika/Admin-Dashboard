@@ -7,6 +7,7 @@ body {
   --main: #011627;
   --secondary: #F7F0F0;
   --greenish: #77BFA3;
+  --offmain: #011627bd;
 }
 
 .dashboard {
@@ -14,18 +15,17 @@ body {
   color: white;
 }
 .nav {
-  background-color: var(--main);
+  background-color: #011627bd;
   color: var(--secondary)
 }
-.content-area {
-  background-color: red;
-}
+
 
 .content-frame {
   display: grid;
   grid-template-columns: 1fr 6fr;
   grid-template-rows: 1fr 5fr;
   height: 100%;
+  background-color: #0116273b;
 }
 
 /* dashboard */
@@ -162,6 +162,7 @@ body {
   align-self: end;
   justify-self: center;
   margin-bottom: 20px;
+  border: none;
 
   font-family: montserrat-b;
   font-size: 0.7rem;
@@ -173,7 +174,8 @@ button:hover{
   width: 160px;
   height: 50px;
   margin-bottom: 15px;
-  background-color: var(--greenish);
+  background-color: var(--offmain);
+  color: var(--secondary);
 }
 
 
@@ -189,7 +191,6 @@ button:hover{
 
 /* main content */
 .main-content{
-  background-color:var(--secondary);
   display:grid;
   grid-template-rows: 1fr 20fr;
   padding: 40px 0;
@@ -210,7 +211,7 @@ button:hover{
   row-gap: 20px;
 }
 .projects{
-  background-color: var(--main);
+  background-color: var(--offmain);
   display:grid;
   grid-template-rows: 15fr 1fr;
   gap:15px;
@@ -241,14 +242,63 @@ button:hover{
 }
 
 
-
-
-
 /* side content */
 .side-content{
-  background-color:burlywood;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+}
+.side-content-area{
+  padding-top: 20px;
+  display: grid;
+  grid-template-rows: 1fr 15fr;
+  max-height: 10rem;
+  gap:10px;
+}
+.content-header{
+  font-family: montserrat-eb;
+}
+.announce-content , .trend-content  {
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  gap: 15px;
+
+  background-color: var(--offmain);
+  color:var(--secondary);
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.announce-content div{
+  display:grid;
+  gap:10px;
+  border-bottom: 3px solid #01162756;
+  padding-bottom: 10px;
+}
+.announce-content > div p{
+  font-size: 0.8rem;
+}
+.announce-header{
+  font-size: 22px;
+  font-family: montserrat-b;
 }
 
+.trend-content div{
+  display: grid;
+  grid-template-columns: fit-content(100%) 1fr;
+  gap:10px;
+
+}
+.trend-content img{
+ width: 42px;
+ border-radius: 50%;
+}
+.trend-content p {
+  align-self: center;
+  font-family: montserrat-r;
+  font-size: 1.3rem;
+}
 
 
 
