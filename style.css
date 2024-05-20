@@ -192,20 +192,22 @@ button:hover{
   background-color:var(--secondary);
   display:grid;
   grid-template-rows: 1fr 20fr;
-  gap:5px;
-  padding: 5px 20px;
+  padding: 40px 0;
+  padding-left: 40px;
 }
 .projects-title{
   display:grid;
   align-self: end;
+  font-family: montserrat-b;
 }
 .projects-section{
   grid-row: 2;
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
-  grid-template-rows: repeat(auto-fit, 220px);
-  background-color: blueviolet;
+  grid-template-rows: repeat(3, 200px);
+  padding-top: 10px;
   gap: 10px;
+  row-gap: 20px;
 }
 .projects{
   background-color: var(--main);
@@ -219,8 +221,12 @@ button:hover{
   gap:5px;
   padding: 10px 5px;
   color: var(--secondary);
-
+}.text-content h3{
+  font-family: montserrat-b;
+}.text-content p{
+  font-family: montserrat-r;
 }
+
 .image-content{
   display:grid;
   grid-template-columns: repeat(3, fit-content(100%));
